@@ -21,4 +21,4 @@ COPY --from=builder /app/target/Client-0.0.1.jar .
 
 EXPOSE 8000
 # Określenie punktu wejścia dla kontenera Docker
-ENTRYPOINT ["java", "-jar", "measurement-0.0.1.jar"]
+ENTRYPOINT ["java", "-jar", "Client-0.0.1.jar"]
